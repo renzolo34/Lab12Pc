@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab11.Views.Operacions">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Base" Text="{Binding BaseRectangulo}"></Entry>
+            <Entry Placeholder="Altura" Text="{Binding AlturaRectangulo}"></Entry>
+            <Button Text="Calcular Área" Command="{Binding CalcularAreaCommand}"/>
+            <Button Text="Calcular Perímetro" Command="{Binding CalcularPerimetroCommand}"/>
+            <Label Text="El área es: "></Label>
+            <Label  FontSize="Large" Text="{Binding Area}"></Label>
+            <Label Text="El perímetro es: "></Label>
+            <Label  FontSize="Large" Text="{Binding Perimetro}"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
